@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>update_win</class>
+ <widget class="QWidget" name="update_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="id_text">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>请修改id为xxx的信息</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>10</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="pw_text">
+        <property name="placeholderText">
+         <string>请输入数字英文混合最多11位密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="name_text">
+        <property name="placeholderText">
+         <string>请输入您的姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>年龄</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="age_text">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>请输入您的年龄</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>性别</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QGroupBox" name="sex_text">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="male_btn">
+           <property name="text">
+            <string>男</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="female_btn">
+           <property name="text">
+            <string>女</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>邮箱</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="email_text">
+        <property name="placeholderText">
+         <string>请输入您的邮箱</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>身份</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QRadioButton" name="user_btn">
+           <property name="text">
+            <string>普通用户</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="manager_btn">
+           <property name="text">
+            <string>管理员</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>单元号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="house_num">
+        <item>
+         <property name="text">
+          <string>A1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>D1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>D2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>房号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="room_num">
+        <property name="placeholderText">
+         <string>请输入您的房号</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="sure_btn">
+     <property name="text">
+      <string>确认</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>male_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>update_win</receiver>
+   <slot>boy_or_girl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>female_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>update_win</receiver>
+   <slot>boy_or_girl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>455</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>user_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>update_win</receiver>
+   <slot>user_or_manager()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>manager_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>update_win</receiver>
+   <slot>user_or_manager()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>455</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sure_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>update_win</receiver>
+   <slot>ok_threading()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>name_text</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>update_win</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>15</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>age_text</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>update_win</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>email_text</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>update_win</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>476</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>room_num</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>update_win</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>480</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>boy_or_girl()</slot>
+  <slot>user_or_manager()</slot>
+  <slot>ok_threading()</slot>
+  <slot>check()</slot>
+ </slots>
+</ui>

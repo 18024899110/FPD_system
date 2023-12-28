@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu_win</class>
+ <widget class="QWidget" name="menu_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>主菜单</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#menu_win{
+background-color: rgb(255, 255, 255);
+}
+
+#inner_label{
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+font: 75 20pt &quot;微软雅黑&quot;;
+}
+
+#user_top_widget{
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+background-color: rgb(104, 148, 0);
+}
+
+#manager_top_widget{
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+background-color: rgb(104, 148, 0);
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="user_top_widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="face_intake_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(202, 0, 0);
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;微软雅黑&quot;;}
+
+
+QPushButton:hover{
+	
+	
+	background-color: rgb(195, 255, 0);
+}
+
+QPushButton:pressed{
+	rgb(0, 255, 170);
+}
+
+QPushButton:disabled{
+background-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>人脸录入</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="answer_to_enter_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(202, 0, 0);
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;微软雅黑&quot;;}
+
+
+QPushButton:hover{
+	
+	
+	background-color: rgb(195, 255, 0);
+}
+
+QPushButton:pressed{
+	rgb(0, 255, 170);
+}
+
+QPushButton:disabled{
+background-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>处理进入请求</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="teenager_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(202, 0, 0);
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;微软雅黑&quot;;}
+
+
+QPushButton:hover{
+	
+	
+	background-color: rgb(195, 255, 0);
+}
+
+QPushButton:pressed{
+	rgb(0, 255, 170);
+}
+
+QPushButton:disabled{
+background-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>查看未成年进出记录</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="manager_top_widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="check_user_imfor_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(202, 0, 0);
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;微软雅黑&quot;;}
+
+
+QPushButton:hover{
+	
+	
+	background-color: rgb(195, 255, 0);
+}
+
+QPushButton:pressed{
+	rgb(0, 255, 170);
+}
+
+QPushButton:disabled{
+background-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>用户信息查看修改</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="check_acpw">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(202, 0, 0);
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;微软雅黑&quot;;}
+
+
+QPushButton:hover{
+	
+	
+	background-color: rgb(195, 255, 0);
+}
+
+QPushButton:pressed{
+	rgb(0, 255, 170);
+}
+
+QPushButton:disabled{
+background-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>修改门禁密码和管理员密钥</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(202, 0, 0);
+border-width:2px;
+border-color: rgb(0, 0, 0);
+border-style:solid;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;微软雅黑&quot;;}
+
+
+QPushButton:hover{
+	
+	
+	background-color: rgb(195, 255, 0);
+}
+
+QPushButton:pressed{
+	rgb(0, 255, 170);
+}
+
+QPushButton:disabled{
+background-color: rgb(145, 145, 145);
+}</string>
+        </property>
+        <property name="text">
+         <string>管理住户人脸录入情况</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="my_widget" name="shower" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>10</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="inner_label">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>欢迎进入FPD人脸识别门禁管理系统</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>my_widget</class>
+   <extends>QWidget</extends>
+   <header>new_Qwidget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>face_intake_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>menu_win</receiver>
+   <slot>open_face_intake_win()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>answer_to_enter_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>menu_win</receiver>
+   <slot>open_answer_win()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>403</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_user_imfor_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>menu_win</receiver>
+   <slot>open_user_imfor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>47</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teenager_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>menu_win</receiver>
+   <slot>open_teenager_record()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_acpw</sender>
+   <signal>clicked()</signal>
+   <receiver>menu_win</receiver>
+   <slot>open_change_door_pw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>menu_win</receiver>
+   <slot>open_check_face()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>621</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>open_face_intake_win()</slot>
+  <slot>open_answer_win()</slot>
+  <slot>open_user_imfor()</slot>
+  <slot>open_acpw()</slot>
+  <slot>open_teenager_record()</slot>
+  <slot>open_change_door_pw()</slot>
+  <slot>open_check_face()</slot>
+ </slots>
+</ui>

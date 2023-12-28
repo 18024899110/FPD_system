@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>check_face_win</class>
+ <widget class="QWidget" name="check_face_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="my_table">
+     <column>
+      <property name="text">
+       <string>id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>姓名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>单元号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>房号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>人脸录入状态</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="delete_btn">
+     <property name="text">
+      <string>删除</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>my_table</sender>
+   <signal>itemClicked(QTableWidgetItem*)</signal>
+   <receiver>check_face_win</receiver>
+   <slot>choose_one()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>check_face_win</receiver>
+   <slot>delete_face()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>294</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>choose_one()</slot>
+  <slot>delete_face()</slot>
+ </slots>
+</ui>

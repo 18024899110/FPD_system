@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>takephotomainwindow</class>
+ <widget class="QWidget" name="takephotomainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>564</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget_2{
+border-width:2px;
+font: 75 12pt &quot;微软雅黑&quot;;
+border-style:solid;
+border-radius:10px;
+border-color: rgb(0, 0, 0);}
+
+#takephotomainwindow{background-color: rgb(255, 255, 255);
+}
+
+#widget{
+border-width:2px;
+font: 75 12pt &quot;微软雅黑&quot;;
+border-style:solid;
+border-radius:10px;
+border-color: rgb(0, 0, 0);
+background-color: rgb(104, 148, 0);}
+
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="camera_window">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+text_align:center;
+border:1px,solid,rgb(255, 255, 255);
+border-radius:5px;
+color: rgb(255, 255, 255);
+font: 75 16pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>请打开摄像头</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="process_bar">
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="invertedAppearance">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="sign_text">
+        <property name="styleSheet">
+         <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>采集人脸未开始</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="open_camera_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+font: 75 12pt &quot;微软雅黑&quot;;
+border-style:solid;
+border-radius:10px;
+border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>打开摄像头</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="close_camera_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+font: 75 12pt &quot;微软雅黑&quot;;
+border-style:solid;
+border-radius:10px;
+border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>关闭摄像头</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="take_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+font: 75 12pt &quot;微软雅黑&quot;;
+border-style:solid;
+border-radius:10px;
+border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>拍张靓照</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="return_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+font: 75 12pt &quot;微软雅黑&quot;;
+border-style:solid;
+border-radius:10px;
+border-color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>open_camera_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>takephotomainwindow</receiver>
+   <slot>open_camera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>close_camera_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>takephotomainwindow</receiver>
+   <slot>close_camera()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>take_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>takephotomainwindow</receiver>
+   <slot>open_takephoto_threading()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>409</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>536</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>return_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>takephotomainwindow</receiver>
+   <slot>return_to_menu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>560</x>
+     <y>427</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>run_camera()</slot>
+  <slot>open_camera()</slot>
+  <slot>takePhoto()</slot>
+  <slot>close_camera()</slot>
+  <slot>open_takephoto_threading()</slot>
+  <slot>return_to_menu()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,4 @@
+此为打包好的可执行文件包
+1.face_detector_cient为人脸识别门禁客户端
+2.manager_cient为用户管理客户端
+3.server为服务器

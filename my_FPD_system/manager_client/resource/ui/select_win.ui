@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>select_win</class>
+ <widget class="QWidget" name="select_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>请输入姓名或者住址进行查询</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="name_text"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="name_btn">
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>单元号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="house_num">
+        <item>
+         <property name="text">
+          <string>A1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>A2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>B2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>C2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>D1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>D2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>房号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="room_num"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="house_room_btn">
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>name_text</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>select_win</receiver>
+   <slot>name_check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>room_num</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>select_win</receiver>
+   <slot>house_room_check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>name_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>select_win</receiver>
+   <slot>name_select()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>house_room_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>select_win</receiver>
+   <slot>house_room_select()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>name_check()</slot>
+  <slot>house_room_check()</slot>
+  <slot>name_select()</slot>
+  <slot>house_room_select()</slot>
+ </slots>
+</ui>

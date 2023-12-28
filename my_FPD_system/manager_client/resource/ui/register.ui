@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registerwindow</class>
+ <widget class="QWidget" name="registerwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>10000</width>
+    <height>10000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>注册界面</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="resetbtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border-radius:5px;
+border-width:1px;
+	background-color: rgb(255, 255, 255);
+border-style:outset}
+
+QPushButton:checked{
+	background-color: rgb(255, 207, 207);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>重置</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="sign_text">
+        <property name="text">
+         <string>请填完所有内容</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exitbtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border-radius:5px;
+border-width:1px;
+	background-color: rgb(255, 255, 255);
+border-style:outset}
+
+QPushButton:checked{
+	background-color: rgb(255, 207, 207);
+
+}</string>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>10</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item row="5" column="3">
+       <widget class="QLineEdit" name="age_num">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="placeholderText">
+         <string>请输入您的年龄</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>性别</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLineEdit" name="name_num">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>请输入您的姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>单元号</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLineEdit" name="room_num">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入您的房号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLineEdit" name="accounttext">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>3</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100000</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="maxLength">
+         <number>6</number>
+        </property>
+        <property name="placeholderText">
+         <string>请输入至多6位账号</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="confirmpwtext">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100000</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>请确认密码</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>姓名</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>年龄</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QGroupBox" name="sex_group">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="male">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+           </property>
+           <property name="text">
+            <string>男</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="female">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+           </property>
+           <property name="text">
+            <string>女</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QComboBox" name="building_num">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="maxVisibleItems">
+         <number>50</number>
+        </property>
+        <property name="maxCount">
+         <number>2147483642</number>
+        </property>
+        <property name="placeholderText">
+         <string>请选择您的单元号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>房号</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>确认密码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="pwtext">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100000</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>密码至少6位，至多10位，请使用英文和数字</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:1px;
+border-color: rgb(255, 255, 255);
+border-style:outset;
+border-radius:1px;</string>
+        </property>
+        <property name="text">
+         <string>账号</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_4">
+     <property name="styleSheet">
+      <string notr="true">border-width:1px;
+border-color: rgb(159, 159, 159);
+border-style:outset;
+border-radius:5px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">border-style:solid;
+border-width:0px;
+</string>
+        </property>
+        <property name="text">
+         <string>邮箱</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="email_text"/>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="send_email_btn">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">border-style:solid;
+border-width:0px;</string>
+        </property>
+        <property name="text">
+         <string>验证码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="my_check_code_text"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="IC_btn">
+        <property name="text">
+         <string>验证</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QLabel" name="IC_status">
+        <property name="styleSheet">
+         <string notr="true">border-style:solid;
+border-width:0px;</string>
+        </property>
+        <property name="text">
+         <string>请完成邮箱验证</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>管理员密匙</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="manager_key_text">
+        <property name="placeholderText">
+         <string>普通用户无需输入</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_3">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="registbtn">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100000</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(156, 156, 156);
+border-radius:5px;
+border-style:outset;
+border-weight:2px;
+border-color: rgb(255, 255, 127);
+font: 75 14pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);}
+
+QPushButton:pressed{
+	
+	background-color: rgb(255, 201, 201);
+}
+
+QPushButton:enabled{
+	background-color: rgb(182, 0, 0);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>注  册</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>registbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>registerwindow</receiver>
+   <slot>registerme()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>506</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>registerwindow</receiver>
+   <slot>resetme()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exitbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>registerwindow</receiver>
+   <slot>exitme()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>578</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>361</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>accounttext</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>504</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pwtext</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>507</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>570</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>confirmpwtext</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>584</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>male</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>boy_or_girl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>female</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>boy_or_girl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>462</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>493</x>
+     <y>350</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>building_num</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>room_num</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>age_num</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>name_num</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>email_text</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>registerwindow</receiver>
+   <slot>check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>send_email_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>registerwindow</receiver>
+   <slot>send_email()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>594</x>
+     <y>395</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IC_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>registerwindow</receiver>
+   <slot>email_check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>543</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>550</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>menuopen()</slot>
+  <slot>exitme()</slot>
+  <slot>about()</slot>
+  <slot>resetme()</slot>
+  <slot>registerme()</slot>
+  <slot>check()</slot>
+  <slot>boy_or_girl()</slot>
+  <slot>send_email()</slot>
+  <slot>email_check()</slot>
+ </slots>
+</ui>
